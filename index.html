@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Letter — Cinematic Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+    <section class="intro overlay active" id="intro">
+      <div class="intro-inner">
+        <p class="eyebrow">For you.</p>
+        <p class="loader-label">Preparing something special…</p>
+        <div class="loader-track"><span class="loader-bar" id="loaderBar"></span></div>
+      </div>
+    </section>
+
+    <main class="scene" id="scene" aria-live="polite">
+      <div class="sunlight" id="sunlight"></div>
+      <div class="desk-grain"></div>
+
+      <section class="desk-stage" id="deskStage">
+        <div class="envelope-shell" id="envelopeShell">
+          <div class="envelope-top"></div>
+          <div class="envelope-body">
+            <p class="recipient">To: My Love</p>
+            <button class="seal" id="seal" aria-label="Break wax seal"></button>
+          </div>
+          <div class="envelope-bottom"></div>
+        </div>
+        <p class="hint" id="hint">Press and drag across the wax seal to open.</p>
+      </section>
+
+      <section class="letter-stage" id="letterStage" aria-hidden="true">
+        <article class="letter folded" id="letter">
+          <h1>My Love,</h1>
+          <p class="ink" data-order="1">There are moments in life that do not ask for attention — they simply change you forever.</p>
+          <p class="ink" data-order="2">Meeting you was one of those moments. Quietly life-altering. You made my world softer, brighter, and more meaningful.</p>
+          <p class="ink" data-order="3">I carry the small things with me: your laugh, your gaze, your calm beside me. Loving you feels like coming home.</p>
+          <p class="ink" data-order="4">I choose you in every season, in every future, in every version of this life we are writing together.</p>
+          <p class="ink" data-order="5">If life is a story, you are my favorite chapter.</p>
+          <p class="signature">Forever yours.</p>
+        </article>
+        <button id="closeBtn" class="close-btn" aria-label="Close letter">Close ritual</button>
+      </section>
+    </main>
+
+    <section class="outro overlay" id="outro" aria-hidden="true">
+      <p>Forever yours.</p>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
