@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lulu — Valentine Cinematic Letter</title>
+    <meta name="description" content="A cinematic valentine experience for Tokoloho 'Lulu' Mahaotsane." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="fxCanvas" aria-hidden="true"></canvas>
+
+    <section class="intro overlay active" id="intro">
+      <div class="intro-inner">
+        <p class="eyebrow">For Tokoloho “Lulu” Mahaotsane</p>
+        <h1>A Valentine Moment, Made Just For You</h1>
+        <p class="loader-label" id="loaderText">Preparing the night sky…</p>
+        <div class="loader-track"><span class="loader-bar" id="loaderBar"></span></div>
+      </div>
+    </section>
+
+    <main class="scene" id="scene" aria-live="polite">
+      <div class="sky-glow"></div>
+      <div class="light-ray ray-1"></div>
+      <div class="light-ray ray-2"></div>
+      <div class="desk"></div>
+
+      <section class="stage" id="stage">
+        <div class="envelope-wrap" id="envelopeWrap">
+          <div class="envelope shadow"></div>
+          <div class="envelope card" id="envelope">
+            <div class="top-flap" id="topFlap"></div>
+            <div class="body">
+              <p class="recipient">To: Lulu</p>
+              <button id="seal" class="seal" aria-label="Break wax seal"></button>
+              <div class="seal-progress" id="sealProgress"></div>
+            </div>
+            <div class="bottom-fold"></div>
+          </div>
+        </div>
+
+        <p class="hint" id="hint">Drag the wax seal to the right, or press Enter.</p>
+      </section>
+
+      <section class="letter-stage" id="letterStage" aria-hidden="true">
+        <article class="letter folded" id="letter">
+          <h2>Happy Valentine’s Day, My Lulu,</h2>
+          <p class="line" data-text="Some people arrive like noise. You arrived like peace — and somehow changed everything in the most beautiful way."></p>
+          <p class="line" data-text="Tokoloho, your smile feels like sunrise, your voice feels like home, and your love has taught my heart what safe, soft, and true can feel like."></p>
+          <p class="line" data-text="I love your tenderness, your strength, your fire, and your kindness. With you, ordinary moments become sacred memories."></p>
+          <p class="line" data-text="Thank you for choosing us. I choose you too — in every season, in every challenge, in every joy, for every tomorrow."></p>
+          <p class="line" data-text="On this Valentine’s Day, and every day after, remember this: you are deeply loved, fiercely cherished, and endlessly adored."></p>
+          <p class="signature" data-text="Forever yours, always."></p>
+        </article>
+        <div class="controls">
+          <button id="closeBtn" class="btn">Close ritual</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="outro overlay" id="outro" aria-hidden="true">
+      <div>
+        <p>Happy Valentine’s Day, Lulu 🤍</p>
+        <button id="replayBtn" class="btn">Replay</button>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
